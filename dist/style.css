@@ -1,0 +1,118 @@
+body{
+    display: inline-block;
+    font-family: 'Red Rose', cursive;
+    margin: 0;
+    background-image: url(blue-sky-1600.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 4;
+    width: 100%;
+    min-height: 100vh;
+    
+
+}
+#h1Div{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content:center ;
+    /* top: 0; */
+    height: 20vh;
+
+}
+.cloud{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(cloud.png);
+    animation: animate 100s linear infinite;
+    
+    z-index: -1;
+    
+}
+@keyframes animate
+{
+    0%{
+        background-position: 0%;
+    } 
+    100%{
+        background-position: 5440px;
+    }
+}
+
+
+
+
+
+.h1{
+    /* position: relative; */
+    justify-self: center;
+    text-align: center;
+    font-size: 6vw;
+}
+
+#nav-container{
+    display: flex;
+    width:100vw;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+
+}
+#inp{
+    width: 62%;
+    display: inline-block;
+    padding: 5px;
+    margin-right: none;
+    border: none;
+    font-size: 3vw;
+}
+
+#btn{
+    width: 38%;
+    height: 100%;
+     display: inline-block;
+     padding: 5px;
+     text-align: center;
+     justify-content: center;
+     margin-left: none;
+     border: none;
+     font-size: 3vw;
+}
+
+#city{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    /* justify-items: center; */
+}
+.addFavorite{
+    color: rgb(23, 168, 23);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
