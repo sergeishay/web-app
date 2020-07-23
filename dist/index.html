@@ -12,9 +12,20 @@
 
 <body>
     <div id="h1Div">
-        <h1 class="h1">Weather App</h1>
+        <!-- <script id="handlebarsCity" type="text/x-handlebars-template">
+            <div class="city">
+                <div class="cityName">{{name}}</div>
+                <div class="temperature">{{temperature}}</div>
+                <img src='{{conditionPic}}' alt="">
+                <div class="condition">{{condition}}</div>
+            </div>
+        </script>
+        <div id="cityContainer"></div> -->
         <div class="cloud"></div>
     </div>
+
+
+
     <div id="nav-container">
         <input id="inp" type="text" placeholder="city">
         <button id="btn">find</button>
@@ -22,7 +33,7 @@
     <script id="handlebarsTemplate" type="text/x-handlebars-template">
         <div class="container">
             {{#each data}}
-            <div id="city">
+            <div class="city">
                <div class="cityName">{{name}}</div>
                <div class="temperature">{{temperature}}</div>
                <img src='{{conditionPic}}' alt="">
@@ -36,7 +47,8 @@
     <div id="container"></div>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- <script src="../dist/Models/DataManager.js"></script>
     <script src="../dist/View/Renderer.js"></script> -->
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>

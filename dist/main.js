@@ -33,7 +33,12 @@ $("#container").on( "click" , '.delete' , async function(){
     await model.removeCity(del)
     render.renderData(model.cityData)
 })
-
+$("#container").on( "click" , '.city' , async function(){
+    let showCity = $(this)
+    console.log(showCity)
+    // await model.chosenCity.push(show)
+    render.renderCity(model.chosenCity)
+})
 
 
 loadPage()

@@ -9,7 +9,7 @@ export class DataManager {
     let getData =  await  $.get('/cities')
     this.cityData = getData
     let mainCity = this.cityData[(this.cityData.length-1)]
-    // this.chosenCity.push(mainCity)
+    this.chosenCity.push(mainCity)
     let allCities = this.cityData
     console.log(allCities)
     console.log(mainCity)
