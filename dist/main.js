@@ -19,11 +19,14 @@ $("button").on("click" , function(){
     handleSearch(input)
 })
 
-$("#container").on( "click" , '.favorite' , function(){
+$("#container").on( "click" , '.favorite' ,async function(){
     let favor = $(this).siblings(".cityName").text()
-    model.saveCity(favor)
-    $(this).css("color" , "green")
-    render.renderData(model.cityData)
+     await model.saveCity(favor)
+    // let some = model.cityData.find(name => name.name = favor)
+    // if('_id' in some){
+    //     $(this).toggleClass("addFavorite");
+    // }
+    // render.renderData(model.cityData)
 })
 $("#container").on( "click" , '.delete' , async function(){
     let del = $(this).siblings(".cityName").text()

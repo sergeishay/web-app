@@ -92,10 +92,14 @@ body{
     align-items: center;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    border-top: white 2px solid;
     /* justify-items: center; */
 }
+/* #icon{
+    color: green;
+} */
 .addFavorite{
-    color: rgb(23, 168, 23);
+    color: green;
 }
 
 
