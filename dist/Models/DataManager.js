@@ -1,18 +1,25 @@
 ////model
 export class DataManager {
   constructor() {
+    this.chosenCity = []
     this.cityData = []
   };
 
   getDataFromDB = async () => {
     let getData =  await  $.get('/cities')
     this.cityData = getData
+    let mainCity = this.cityData[(this.cityData.length-1)]
+    // this.chosenCity.push(mainCity)
+    let allCities = this.cityData
+    console.log(allCities)
+    console.log(mainCity)
+    
   };
 
   getCityData = async (cityName) => {
     let data = await $.get(`/city/${cityName}`)
     this.cityData.push(data)
-    console.log(this.cityData)
+    // console.log(this.cityData)
   };
 
   saveCity = async (cityName) => {

@@ -1,4 +1,4 @@
-// const Handlebars = require('handlebars')
+
 
 
 export class Renderer {

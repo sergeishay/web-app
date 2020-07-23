@@ -27,6 +27,7 @@ router.get('/city/:cityName', function (req, res) {
 
 router.get('/cities', function (req, res) {
    City.find({}).exec(function(err , cities){
+    //  let corentCity = cities[0]
      res.send(cities)
     })
 });
